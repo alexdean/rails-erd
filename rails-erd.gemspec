@@ -14,8 +14,9 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "rails-erd"
 
-  s.add_runtime_dependency "activerecord", ["~> 3.2"]
-  s.add_runtime_dependency "activesupport", ["~> 3.2"]
+  # only until https://github.com/voormedia/rails-erd/issues/115 is resolved
+  s.add_runtime_dependency "activerecord", [">= 3.2", "< 5.0"]
+  s.add_runtime_dependency "activesupport", [">= 3.2", "< 5.0"]
   s.add_runtime_dependency "ruby-graphviz", ["~> 1.0.4"]
   s.add_runtime_dependency "choice", ["~> 0.1.6"]
 
